@@ -1,0 +1,65 @@
+@import "form";
+@import "calendar";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+}
+
+button {
+  user-select: none;
+}
+
+.error-block {
+  display: none;
+  background-color: rgba(255, 0, 0, .1);
+  padding: 30px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-block > span {
+  color: red;
+  font-size: 1.4em;
+}
+
+.error-message {
+  font-family: "Verdana", sans-serif;
+  position: relative;
+  font-weight: 400;
+  margin-left: 70px;
+}
+
+.error-message::before {
+  font-family: "Cordia New", Ayuthaya, Tahoma, "Arial Unicode MS";
+  content: "\2718";
+  position: absolute;
+  left: -30px;
+}
+
+.button-close {
+  font-size: 1.8em;
+  cursor: pointer;
+  color: black;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  user-select: none;
+}
+
+.err-visible {
+  display: flex;
+}
+
+.node-hidden {
+  display: none;
+}
+
+.root {
+  width: 90%;
+  margin: 0 auto;
+}
+
+

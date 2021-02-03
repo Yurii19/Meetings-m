@@ -1,0 +1,58 @@
+
+.form-input {
+  font-size: 1.2em;
+  border: 2px solid rgba(0, 0, 0, .5);
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 30px 10px 30px;
+
+  &:focus {
+    border: 2px solid black;
+  }
+}
+
+.form {
+  margin-top: 40px;
+  padding: 40px 40px 40px 40px;
+  border-left: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  justify-content: space-around;
+}
+
+.form > label {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.form > label > select {
+  width: 50%;
+  .form-input;
+}
+
+.form > label > input {
+  width: 39%;
+  .form-input;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.button-container > * {
+  .form-input;
+  margin-left: 30px;
+  width: 25%;
+
+}
+
+.form > label {
+  height: 100px;
+}

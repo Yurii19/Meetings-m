@@ -16,6 +16,20 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.less$/i,
+                use: [
+                    {
+                        loader: "style-loader",
+                    },
+                    {
+                        loader: "css-loader",
+                    },
+                    {
+                        loader: "less-loader",
+                    },
+                ],
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
@@ -33,6 +47,7 @@ module.exports = {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource',
             },
+
         ]
     },
     plugins: [
