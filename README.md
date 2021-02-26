@@ -1,4 +1,4 @@
-# ciklum-test
+# Meetings-manager
 This is simple web application which can help for manage schedule meeting specified room
 ## Features
 1. Display meetings planned
